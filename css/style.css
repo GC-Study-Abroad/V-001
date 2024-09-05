@@ -496,3 +496,142 @@
 .footer .copyright a:hover {
     color: #FFFFFF;
 }
+
+
+
+
+/* Whatsapp floating btn */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+
+
+.university {
+    width: 90vw;
+    overflow-x: scroll;
+    white-space: nowrap;
+    background-color: #fff;
+    display: flex;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scroll-disabler {
+    width: 100vw;
+    height: 450px;
+    position: absolute;
+    background-color: rgba(0,0,0 , 0.0001);
+  }
+  
+   ::-webkit-scrollbar {
+    display: none;
+  }
+  
+  article {
+    min-width: 350px;
+    height: 400px;
+    padding: 1rem;
+  }
+  article .wrapper {
+    padding: 1rem;
+    background-color: #fff;
+    height: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+  }
+  article .img {
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px 25px 0 0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+  }
+
+
+  article .img-1{
+    background-image: url(../img/uni-2.webp);
+  }
+  article .img-2{
+    background-image: url(../img/uni-1.webp);
+  }
+  article .img-3{
+    background-image: url(../img/alexander.jpg);
+  }
+  article .img-4{
+    background-image: url(../img/uni-5.jpg);
+  }
+
+  article .img-5{
+    background-image: url(../img/uni-4.webp);
+  }
+
+
+
+  article .content > div {
+    height: 2rem;
+    /* background-color: #0034c4; */
+    margin: 2rem auto 0 auto;
+    width: 85%;
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10); */
+    border-radius: 5px;
+  }
+  article .content > div:last-child {
+    height: 5rem;
+    background: none;
+  }
+
+
+
+  /* University Details */
+
+  .content .uni-title{
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+ .content .uni-title h1{
+          text-align: start;
+          color: #1d1d1d;
+          font-size: 1.2rem;
+          font-family: "Raleway",  sans-serif;
+          text-wrap: wrap;
+      }
+
+
+ .content .uni-details a{
+       color: #015FC9;
+      }
+      
+
+      .uni-btn{
+        border: none;
+        background: none;
+        border: 1px solid #015FC9;
+        border-radius: 0.5rem;
+      }
+
+      .uni-btn:hover{
+        background-color: #015FC9;
+        color: #fff;
+      }
