@@ -28,8 +28,6 @@
 
 
 
-
-
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
@@ -870,6 +868,97 @@
 
 
 
+    <!-- Framer lab -->
+    <div>
+        <div id="flamelab-chat-widget">
+        <img src="https://flamelab.io/img/avatar-sm.png" alt="Avatar Image">
+        <div class="flamelab-cw-msg-box">
+            <span>Hey! Have difficulties funding your studies? MPOWER Financing have got you covered, Apply for the loan today.</span>
+            <!-- <span style="opacity: 0.5;">- Mike (the creator of this site)</span> -->
+            <div class="flamelab-cw-buttons">
+                <a href="https://www.mpowerfinancing.com" target="_blank" class="flamelab-cw-button flamelab-cw-button-yes">Apply</a>
+                <div class="flamelab-cw-button flamelab-cw-button-no">No thanks</div>
+            </div>
+        </div>
+    </div>
+    <style>
+        #flamelab-chat-widget {
+            position: fixed;
+            bottom: 150px;
+            left: -40px;
+            animation-name: flamelab-chat-widget_enter;
+            animation-duration: 1.5s;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            z-index: 1000;
+            color: black;
+        }
+        #flamelab-chat-widget img {
+            animation-name: flamelab-chat-widget_rotate;
+            animation-duration: 1.5s;
+            transform: rotate(20deg);
+        }
+        .flamelab-cw-msg-box {
+            background: white;
+            width: 280px;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            animation-name: flamelab-chat-widget_msg-appear;
+            animation-duration: 2s;
+            font-size: 15px;
+            line-height: 23px;
+        }
+        .flamelab-cw-buttons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0 -4px;
+            margin-top: 8px;
+            font-weight: 600;
+        }
+        .flamelab-cw-button {
+            cursor: pointer;
+            padding: 4px;
+            margin-right: 12px;
+            display: block;
+            text-decoration: none;
+        }
+        .flamelab-cw-button-yes {
+            color: #FF1B96;
+            font-weight: 700;
+        }
+        @keyframes flamelab-chat-widget_enter {
+            from { left: -200px; }
+            to { left: -40px; }
+        }
+        @keyframes flamelab-chat-widget_rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(20deg); }
+        }
+        @keyframes flamelab-chat-widget_msg-appear {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+    </div>
+
+    <script>
+        let hideLoan = document.querySelector('.flamelab-cw-button-no');
+        let loanPop = document.querySelector('#flamelab-chat-widget');
+
+        hideLoan.addEventListener('click', ()=>{
+           
+            loanPop.style.display ='none';
+        })
+
+    </script>
+
+  
+
+
 
     <!-- Whatsapp button -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -895,7 +984,7 @@
 
 
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
     (function(){
     var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -905,7 +994,7 @@
     s1.setAttribute('crossorigin','*');
     s0.parentNode.insertBefore(s1,s0);
     })();
-    </script>
+    </script> -->
     <!--End of Tawk.to Script-->
 
 
